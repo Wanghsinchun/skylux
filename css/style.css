@@ -215,4 +215,10 @@ video {
 
 }
 
+@media screen and (max-width:500px){
+    .ml3 {
+        font-size: 30px;
+
+    }
+}
 
