@@ -18,7 +18,7 @@ p,
 a {
     font-size: 16px;
     letter-spacing: 0.2em;
-   
+
 }
 
 
@@ -29,7 +29,18 @@ body {
 }
 
 
+@media screen and (max-width:500px) {
 
+    p,
+    a {
+        font-size: 14px;
+
+    }
+
+    h3{
+        font-size: 16px;
+    }
+}
 
 
 
@@ -160,8 +171,8 @@ video {
     border: 2px solid rgb(140, 233, 233);
 }
 
-.about p{
-     text-align: center;
+.about p {
+    text-align: center;
 }
 
 
@@ -195,9 +206,9 @@ video {
     height: 450px;
 }
 
-@media screen and (max-width:769px){
-    .about-banner-b{
-    display: none;
+@media screen and (max-width:769px) {
+    .about-banner-b {
+        display: none;
     }
 }
 
@@ -215,10 +226,9 @@ video {
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     .ml3 {
         font-size: 30px;
 
     }
 }
-
