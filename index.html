@@ -262,7 +262,7 @@
             <p>03-533-6891</p>
         </div>
 
-        <div class="row g-0" id="map">        
+        <div class="row g-0" id="map">
         </div>
 
     </div>
@@ -307,7 +307,7 @@
     </script>
 
 
-<!--map-->
+    <!--map-->
 
 
     <script>
@@ -316,21 +316,150 @@
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 24.8131173050631, lng: 120.96563571078889 },
                 zoom: 15,
-                streetViewControl:false,
-                scaleControl:false,
+                streetViewControl: false,
+                scaleControl: false,
+                mapTypeControl: false,
+                styles: [{
+                    "featureType": "administrative",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": "-100"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.province",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 65
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": "50"
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": "-100"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "lightness": "30"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "lightness": "40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#ffff00"
+                        },
+                        {
+                            "lightness": -25
+                        },
+                        {
+                            "saturation": -97
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "lightness": -25
+                        },
+                        {
+                            "saturation": -100
+                        }
+                    ]
+                }
+                ]
             });
 
             var marker = new google.maps.Marker({
                 position: { lat: 24.8131173050631, lng: 120.96563571078889 },
                 map: map
             });
-           
-            
+
+
+
+
+
+
         }
     </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
-async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
+        async defer></script>
 </body>
 
 
