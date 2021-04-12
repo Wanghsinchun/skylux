@@ -35,6 +35,9 @@
 
 
 
+
+
+
 </head>
 
 
@@ -252,14 +255,14 @@
     <div class="container-fluid contact">
 
         <div class="row">
-            <div class="col"  id="map">
-      
+            <div class="col" id="map">
+
             </div>
 
             <div class="col">
                 <h3>預約參觀</h3>
                 <p>無論工作類型、人數或預算多寡 </p>
-                <p>SkyLux 都能夠協助您找到最適合的工作空間</p>                  
+                <p>SkyLux 都能夠協助您找到最適合的工作空間</p>
                 <p>03-533-6891</p>
             </div>
 
@@ -270,23 +273,8 @@
 
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
-        async defer></script>
 
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 24.8131173050631, lng: 120.96563571078889 },
-                zoom: 15,
-            });
 
-            var marker = new google.maps.Marker({
-                position: { lat: 24.8131173050631, lng: 120.96563571078889 },
-                map: map
-            });
-        }
-    </script>
 
 
 
@@ -318,8 +306,25 @@
                     easing: "easeOutExpo",
                     delay: 1000
                 });
-
         })
+    </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
+async defer></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 24.8131173050631, lng: 120.96563571078889 },
+                zoom: 15,
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: 24.8131173050631, lng: 120.96563571078889 },
+                map: map
+            });
+        }
     </script>
 
 </body>
