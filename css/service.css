@@ -1,0 +1,76 @@
+.service {
+    margin-top: 0px;
+    width: 100%;
+}
+
+.service h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #666666;
+}
+
+.service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service .txt {
+    padding: 50px 120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service .txt p {
+    text-align: justify;
+}
+
+
+.service button {
+    font-size: 16px;
+    display: block;
+    width: 150px;
+    border: 1.5px solid #777777;
+    background-color: transparent;
+    padding: 5px;
+    letter-spacing: 0.2em;
+}
+
+.service button:hover {
+    border: 2px solid rgb(57, 134, 235);
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+.service button a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 300;
+}
+
+.service button:hover a {
+    color: rgb(57, 134, 235);
+    transition: .3s;
+    font-weight: 500;
+}
+
+.service button:hover a:after {
+    content: " <";
+    transition: .3s;
+    color: rgb(57, 134, 235);
+}
+
+.service button:hover a:before {
+    content: " >";
+    transition: .3s;
+    color: rgb(57, 134, 235);
+}

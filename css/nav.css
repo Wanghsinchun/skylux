@@ -1,0 +1,109 @@
+
+
+#logo{
+    z-index: 1000;   
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+/*toggler*/
+
+#toggler {
+    display: none;
+}
+
+
+
+.humburger-container {   
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.humburger-container span {
+    display: block;
+    text-align: center;
+    height: 2px;
+    width: 38px;
+    background-color: #fff;
+    position: relative;
+    transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+    top:20px;
+    left:6px ;
+}
+
+.humburger-container span:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+
+#toggler:checked+label .humburger-container span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 24px;
+    transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+}
+
+#toggler:checked+label .humburger-container span:nth-child(2) {
+    transform: rotate(-45deg);
+    top: 12px;
+    transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+}
+
+
+
+/*nav*/
+
+.nav-items {
+    background-color: #181C2B;
+    width: 50%;
+    height: 100vh;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+
+#toggler:checked~.nav-items {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.3em;
+}
+
+
+
+.nav-items li {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.nav-items a:hover {
+    transition: .3s ease-in-out;
+    color:#8ce9e9;
+    font-weight: 500;
+    letter-spacing: 0.7em;
+}
