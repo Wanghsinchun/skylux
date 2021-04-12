@@ -46,6 +46,7 @@ body {
     justify-content: center;
     position: relative;
     top: -30px;
+
 }
 
 
@@ -79,14 +80,14 @@ video {
 
 /*about*/
 
-.about:before {
+.about p:first-child:before {
     content: " ";
     display: block;
     width: 1px;
     height: 90px;
     background-color: rgb(112, 112, 112);
     position: absolute;
-    top: calc(100vh - 65px);
+    top: -135px;
     left: 50%;
 }
 
@@ -194,7 +195,11 @@ video {
     height: 450px;
 }
 
-
+@media screen and (max-width:769px){
+    .about-banner-b{
+    display: none;
+    }
+}
 
 
 
