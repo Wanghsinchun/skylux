@@ -10,10 +10,23 @@
 }
 
 #map {
-    width: 100%;
+    width: 60%;
     height: 400px;
+    margin: 0 auto;
 }
 
 .contact p{
     text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    #map {
+        width: 80%;        
+    }
+}
+
+@media screen and (max-width:600px) {
+    #map {
+        width: 100%;        
+    }
 }
