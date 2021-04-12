@@ -22,170 +22,9 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*banner*/
-
-.banner {
-    width: 100%;
-    height: 100vh;
-    object-fit: contain;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -30px;
-}
-
-
-.banner-word {
-    position: absolute;
-    z-index: 88;
-    color: #fff;
-    text-align: center;
-}
-
-
-.banner-word h3 {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.banner-word p {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-
-video {
-    object-fit: cover;
-    margin-top: 0;
-}
-
-
-
-
-/*about*/
-
-.about:before {
-    content: " ";
-    display: block;
-    width: 1px;
-    height: 90px;
-    background-color:rgb(112, 112, 112);    
-    position: absolute;
-    top: calc(100vh - 65px);
-    left: 50%;
-}
-
-
-
-.about-banner {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    width: 780px;
-}
-
-.about-banner-pic{
-    display: inline-block;
-}
-
-.about-banner-pic2{
-    display: none;
-}
-
-
-
-.about-banner .story {
+html, body{
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: .3s;
-    background-color: rgba(0,0,0,.8);
-   
-
-}
-
-.about-banner .story:hover button{
-    transform: scale(1);
-    transition: .6s;
-
-}
-.about-banner .story:hover {
-    opacity: 1;    
-}
-
-
-
-.about-banner button {
-    border: 1.5px solid rgb(255, 255, 255);
-    background-color: transparent;
-    padding: 20px 100px;
-    transform: scale(0);
-}
-
-
-.about-banner button a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.about-banner button:hover a{
-    color:rgb(140, 233, 233);
-}
-.about-banner button:hover {
-    border:2px solid rgb(140, 233, 233);
-}
-
-
-
-@media screen and (max-width:780px){
-    .about-banner {   
-        width: 100%;
-    }
-    .about-banner-pic{
-        display: none;
-    }
-
-    .about-banner-pic2{
-        display: inline-block;        
-    }
-    .about-banner-pic2 img{
-        width: 100%;        
-    }
-}
-
-
-.about-banner-b{
-    background-image: url("../pic/8.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: -100px;
-    height: 450px;
 }
 
 
@@ -193,13 +32,186 @@ video {
 
 
 
-/*banner h1*/
+        /*banner*/
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            object-fit: contain;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -30px;
+        }
 
 
-.ml3 {
-    font-size: 40px;
-    font-family:"Roboto", "Noto Sans TC", sans-serif;
-    font-weight: 500;    
-    letter-spacing: 0.2em;
+        .banner-word {
+            position: absolute;
+            z-index: 88;
+            color: #fff;
+            text-align: center;
+        }
 
-  }
+
+        .banner-word h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .banner-word p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+
+        video {
+            object-fit: cover;
+            margin-top: 0;
+        }
+
+
+
+
+        /*about*/
+
+        .about:before {
+            content: " ";
+            display: block;
+            width: 1px;
+            height: 90px;
+            background-color: rgb(112, 112, 112);
+            position: absolute;
+            top: calc(100vh - 65px);
+            left: 50%;
+        }
+
+
+
+        .about-banner {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            width: 780px;
+        }
+
+        .about-banner-pic {
+            display: inline-block;
+        }
+
+        .about-banner-pic2 {
+            display: none;
+        }
+
+
+
+        .about-banner .story {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: .3s;
+            background-color: rgba(0, 0, 0, .8);
+
+
+        }
+
+        .about-banner .story:hover button {
+            transform: scale(1);
+            transition: .6s;
+
+        }
+
+        .about-banner .story:hover {
+            opacity: 1;
+        }
+
+
+
+        .about-banner button {
+            border: 1.5px solid rgb(255, 255, 255);
+            background-color: transparent;
+            padding: 20px 100px;
+            transform: scale(0);
+        }
+
+
+        .about-banner button a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .about-banner button:hover a {
+            color: rgb(140, 233, 233);
+        }
+
+        .about-banner button:hover {
+            border: 2px solid rgb(140, 233, 233);
+        }
+
+
+
+        @media screen and (max-width:780px) {
+            .about-banner {
+                width: 100%;
+            }
+
+            .about-banner-pic {
+                display: none;
+            }
+
+            .about-banner-pic2 {
+                display: inline-block;
+            }
+
+            .about-banner-pic2 img {
+                width: 100%;
+            }
+        }
+
+
+        .about-banner-b {
+            background-image: url("../pic/8.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: -100px;
+            height: 450px;
+        }
+
+
+
+
+
+
+        /*banner h1*/
+
+
+        .ml3 {
+            font-size: 40px;
+            font-family: "Roboto", "Noto Sans TC", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+
+        }
+
+
+
+        /*contact*/
+
+
+        #map{
+            width: 100%;
+            height: 400px;
+        }
+        

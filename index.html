@@ -26,11 +26,14 @@
     </link>
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     </link>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
 
 </head>
 
@@ -189,15 +192,15 @@
 
     <!--share-->
     <div class="container-fluid share">
-        <h3>Skylux是您最好的選擇</h3>
-        <p>以下為使用者提供的見證分享</p>
+        <h3 data-aos="fade-up" data-aos-duration="1500">Skylux是您最好的選擇</h3>
+        <p data-aos="fade-up" data-aos-duration="1500">以下為使用者提供的見證分享</p>
 
-        <div class="share-items">
+        <div class="share-items" data-aos="fade-up" data-aos-duration="2300">
             <div class="item A">
                 <div class="pic"><img src="pic/choose1.png" alt=""></div>
                 <div class="txt">
                     <a href="https://showcha.com/blog/post/hsinchu-skylux">
-                    <h3  style="text-align: left;">恰爾斯</h3>
+                        <h3 style="text-align: left;">恰爾斯</h3>
                         <p>服務人員熱心到一個不行，空間乾淨整齊，相同價位比其他商務中心大間許多啊！</p>
                     </a>
                 </div>
@@ -207,7 +210,7 @@
                 <div class="pic"><img src="pic/choose4.png" alt=""></div>
                 <div class="txt">
                     <a href="https://zi.media/@ivy469525/post/aK5MBm">
-                    <h3>Ivy Huang</h3>
+                        <h3>Ivy Huang</h3>
                         <p>服務親切，空間氣氛營造溫馨，很喜歡大家ㄧ起共享空間的感覺。</p>
                     </a>
                 </div>
@@ -216,8 +219,9 @@
             <div class="item C">
                 <div class="pic"><img src="pic/choose3.png" alt=""></div>
                 <div class="txt">
-                    <a href="https://dong1104.pixnet.net/blog/post/46059597-%E3%80%90%E6%96%B0%E7%AB%B9%E5%95%86%E5%8B%99%E4%B8%AD%E5%BF%83%E7%87%9F%E6%A5%AD%E7%99%BB%E8%A8%98%E3%80%91skylux-%E5%89%B5%E6%A5%AD%E5%85%B1%E4%BA%AB%E7%A9%BA">
-                    <h3>東蛙池塘</h3>
+                    <a
+                        href="https://dong1104.pixnet.net/blog/post/46059597-%E3%80%90%E6%96%B0%E7%AB%B9%E5%95%86%E5%8B%99%E4%B8%AD%E5%BF%83%E7%87%9F%E6%A5%AD%E7%99%BB%E8%A8%98%E3%80%91skylux-%E5%89%B5%E6%A5%AD%E5%85%B1%E4%BA%AB%E7%A9%BA">
+                        <h3>東蛙池塘</h3>
                         <p>舒適空間，服務人員親切專業，很好的一個地方!</p>
                     </a>
                 </div>
@@ -227,8 +231,9 @@
 
                 <div class="pic"><img src="pic/choose2.png" alt=""></div>
                 <div class="txt">
-                    <a href="https://beri201314.pixnet.net/blog/post/348502720-%E3%80%90%E6%96%B0%E7%AB%B9-%E5%8C%97%E5%8D%80%E5%95%86%E5%8B%99%E7%A9%BA%E9%96%93%E3%80%91skylux%E5%85%B1%E4%BA%AB%E8%BE%A6%E5%85%AC%E5%AE%A4">
-                    <h3  style="text-align: left;">貝大小姐與瑞餚姐</h3>
+                    <a
+                        href="https://beri201314.pixnet.net/blog/post/348502720-%E3%80%90%E6%96%B0%E7%AB%B9-%E5%8C%97%E5%8D%80%E5%95%86%E5%8B%99%E7%A9%BA%E9%96%93%E3%80%91skylux%E5%85%B1%E4%BA%AB%E8%BE%A6%E5%85%AC%E5%AE%A4">
+                        <h3 style="text-align: left;">貝大小姐與瑞餚姐</h3>
                         <p>空間很舒適明亮，感覺是理想的工作環境歐</p>
                     </a>
                 </div>
@@ -242,11 +247,46 @@
 
 
 
-<!--contact-->
+    <!--contact-->
 
-<div class="container-fulid contact">
-</div>
+    <div class="container-fluid contact">
 
+        <div class="row">
+            <div class="col"  id="map">
+      
+            </div>
+
+            <div class="col">
+                <h3>預約參觀</h3>
+                <p>無論工作類型、人數或預算多寡 </p>
+                <p>SkyLux 都能夠協助您找到最適合的工作空間</p>                  
+                <p>03-533-6891</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
+        async defer></script>
+
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 24.8131173050631, lng: 120.96563571078889 },
+                zoom: 15,
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: 24.8131173050631, lng: 120.96563571078889 },
+                map: map
+            });
+        }
+    </script>
 
 
 
