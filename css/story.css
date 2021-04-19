@@ -43,7 +43,7 @@ p {
 
 .plan .rock1 img {
     position: absolute;
-    bottom: -250px;
+    bottom: -150px;
     left: 0;
 }
 
@@ -51,7 +51,7 @@ p {
 
 .plan .rock2 img {
     position: absolute;
-    bottom: -250px;
+    bottom: -150px;
     right: 0;
 }
 
