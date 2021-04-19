@@ -1,0 +1,133 @@
+.plan {
+    background-image: url("../pic/plan-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.plan .txt {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+}
+
+
+.plan h3,
+.plan p {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+
+
+.plan img {
+    max-width: 400px;
+}
+
+.plan .rock1 img {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+}
+
+
+
+.plan .rock2 img {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+}
+
+
+/*早期*/
+
+.early {
+    padding-bottom: 120px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEEEEE;
+
+}
+
+
+.early .txt{
+    width: 500px;
+    text-align: justify;
+}
+
+.early h3,
+.late h3{
+    text-align: center;
+}
+
+/*
+.early h3:before {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(112, 112, 112);
+    position: absolute;
+    top:95vh;
+    left: 50%;
+}
+*/
+
+
+.early img,
+.late img{
+   margin-top: 50px;
+}
+
+
+/*晚期*/
+
+
+.late {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.late .txt{
+    margin-top: 120px;
+    width: 500px;
+    text-align: justify;
+}
+
+
+
+/*
+.late h3:before {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(112, 112, 112);
+    position: absolute;
+    top:-40px;
+    left: 50%;
+}
+
+*/

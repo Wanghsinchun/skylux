@@ -60,18 +60,18 @@
 
         <label for="toggler">
 
-            <div class="humburger-container">
+            <div class="humburger-container ">
                 <span></span>
                 <span></span>
             </div>
 
         </label>
-        <nav class="nav-items navbar">
+        <nav class="nav-items">
 
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="story.html">品牌故事(建造中)</a></li>
-                <li><a href="#service1">服務項目</a></li>
+                <li><a href="#">品牌故事(建造中)</a></li>
+                <li><a href="#">服務項目(建造中)</a></li>
                 <li><a href="#">最新消息(建造中)</a></li>
                 <li><a href="#contact">連絡我們</a></li>
 
@@ -389,7 +389,6 @@
             })
 
 
-            /*首字*/
             var textWrapper = document.querySelector('.ml3');
             textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -411,12 +410,8 @@
     </script>
 
 
-
-
     <!--map-->
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
-        async defer></script>
 
     <script>
         var map;
@@ -543,20 +538,10 @@
         }
     </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmA3hz-5Ie5Gzax5ej8UFlohQPCLT7eqc&callback=initMap"
+        async defer></script>
 
 
-
-
-        <!--點選連結滑到位關選單-->
-        <script>
-        $(function(){
-            if($(window).width()<2400){ 
-            $('.navbar ul a').on('click', function(){
-                $('.humburger-container').click();
-              });
-            }
-            });
-        </script>
 
 </body>
 
