@@ -343,9 +343,9 @@
     <div class="container-fluid g-0 footer">
         <footer>
 
-            
-                <p>Copyright ©2021 SkyLux創業共享辦公室</p>
-            
+
+            <p>Copyright ©2021 SkyLux創業共享辦公室</p>
+
 
             <div class="social">
                 <a href="https://www.facebook.com/CoworkingCenter001/">
@@ -368,7 +368,6 @@
 
         </footer>
     </div>
-
 
 
 
@@ -420,6 +419,16 @@
 
     <script>
         var map;
+        var marker = new google.maps.Marker({
+            position: { lat: 24.8131173050631, lng: 120.96563571078889 },
+            icon: 'maplogo.png',
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+
+        var contentString = '<h1>大家好</h1>';
+
+
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 24.8131173050631, lng: 120.96563571078889 },
@@ -533,12 +542,20 @@
                 ]
             });
 
-            var marker = new google.maps.Marker({
-                position: { lat: 24.8131173050631, lng: 120.96563571078889 },
-                icon: 'maplogo.png',
-                animation: google.maps.Animation.DROP,
-                map: map
+
+
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+
+                maxWidth: 200,
+
             });
+            infowindow.open(map, marker);
+
+
+
+
 
         }
     </script>
@@ -547,16 +564,16 @@
 
 
 
-        <!--點選連結滑到位關選單-->
-        <script>
-        $(function(){
-            if($(window).width()<2400){ 
-            $('.navbar ul a').on('click', function(){
-                $('.humburger-container').click();
-              });
+    <!--點選連結滑到位關選單-->
+    <script>
+        $(function () {
+            if ($(window).width() < 2400) {
+                $('.navbar ul a').on('click', function () {
+                    $('.humburger-container').click();
+                });
             }
-            });
-        </script>
+        });
+    </script>
 
 </body>
 
